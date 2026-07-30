@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <script>
+        function action(){
+            document.querySelector("p").textContent="hello"
+            document.querySelector("button").textContent="changestring"
+            document.querySelector(".zz").style.color="red"
+            document.querySelector(".zz").style.display="none"
+
+        }
+    </script>
+</head>
+<body>
+    <p class="xx" id="yy">この文字を書き換えます</p>
+    <p class="xx" id="zz">私の名前は佐藤です</p>
+    <button onclick="action()">文字を書き換える</button>
+</body>
+</html>
