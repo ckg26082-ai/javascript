@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    2 <sup>3</sup>
+    <script>
+        let a = 2 ** 3;
+        //let は変数の宣言をする命令
+        document.write("=" + a);
+        // document.writeはHTMLの中に文字列を書く命令
+        // 文字列＋数字は、文字列と数字を結合したもの
+        document.write("<br>");
+        let b = 1;
+        b++;
+        document.write("b=" + b + "<br>");
+
+        let c = 1;
+        c--;
+        document.write("c=" + c + "<br>");
+
+        let CountUpFromAnswer = 0;
+        // CountUpFromAnswer = CountUpFromAnswer + 1;
+        CountUpFromAnswer++;
+        document.write("CountUpFromAnswer=" + CountUpFromAnswer + "<hr>");
+
+        let d = 9;
+        let e = 10;
+        d = d + e;
+        d += e;
+        document.write("d=" + d + "<br>");
+        // let は最初の変数が出てきた時だけ書く。
+        // ２回目の登場は書かない。
+
+        d = d + e;
+        d += e;
+
+        d = d - e;
+        d -= e;
+
+        d = d * e;
+        d *= e;
+
+        d = d % e;
+        d %= e;
+
+        CountUpFromAnswer = CountUpFromAnswer + 123445666;
+        CountUpFromAnswer += 123445666;
+
+        // 計算には優先順位がある。
+        let g = (1 + 2) * 3;    //  gは
+        document.write("g: " + g + "<br>");
+        let h = 1 + 2 * 3;      //  hは7
+        let i = 1;
+        let j = ++i;            //  jは2
+        document.write("j: " + j + "<br>");
+        i = 1;
+        let k = i++;            // kは1
+        document.write("k: " + k + "<br>");
+    </script>
+    <script>
+        let m = 1;
+        if (m > 0) {
+            document.write("0より多きい<br>");
+        }
+        // ifは条件に応じれ、yesの時だけ処理を行う
+        // 処理は、［］の間に書きます
+        // 処理は、（）の間に書きます。
+    </script>
+</body>
+
+</html>
