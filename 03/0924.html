@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- javaScriptのプログラムを書くタグ -->
+    <script> //javaScriptのプログラムを書くタグ
+        //変数の宣言（使う）をする
+        var A = 1;      //1 + A   代入は左右が逆になる
+        let B = 5;      //命令の終わりは、; （セミコロン）
+        let C = 6;      //変数を使うときは、最初にlet、varをつける
+
+        var D = B * B - 4 * A * C;
+
+        var D = B ** B - 4 * A * C;    //この書き方は2条の省略形
+        //Ninzu * Ninzu       <->  Ninzu ** 2
+
+        if (D == 0) {
+            //yes.
+            var X = - (B * B) / (2 * A);
+            //計算の優先順位によっては格好を省略できない。
+
+            document.write("計算結果は" + X + "です")
+            //注意
+            //document.write()は、かっこの中の文字をHTMLの中に出力
+            //日本語の文字は、半角の二重引用符で囲む
+            //変数名は大文字と小文字の区別がある。
+        } else {//elseは「それ以外」のこと
+            //no.
+            if (D < 0) {
+                document.write("解なし");
+            } else {
+                document.write("解あり");
+            }
+            //｛　... ｝の間が１命令の時は、かっこは省略できる。
+        }
+    </script>
+    <br>
+    <script>
+        for (var i = 0 ; i < 10 ; i++){
+            //for (初期化、条件式、増分)｛｝
+            document.write("i: " + i + "<br>")
+        }
+    </script>
+</body>
+
+</html>
